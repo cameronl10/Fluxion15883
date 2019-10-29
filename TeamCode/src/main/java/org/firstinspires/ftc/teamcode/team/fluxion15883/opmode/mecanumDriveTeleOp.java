@@ -74,6 +74,10 @@ public class mecanumDriveTeleOp extends OpMode {
             rightServo.setPosition(-0.5);
             leftServo.setPosition(0.5);
         }
+
+        telemetry.addData("arm motor","arm motor power" + String.format("%.2f",armMotor.getPower()));
+        telemetry.addData("r servo psn","right servo position" + String.format("%.2f",rightServo.getPosition()));
+        telemetry.addData("l servo psn","left servo position" + String.format("%.2f",leftServo.getPosition()));
     }
     @Override
     public void stop(){
