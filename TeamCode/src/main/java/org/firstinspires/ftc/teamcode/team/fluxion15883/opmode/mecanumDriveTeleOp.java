@@ -22,9 +22,12 @@ public class mecanumDriveTeleOp extends OpMode {
         backRightDrive = hardwareMap.get(DcMotor.class,"back_right_drive");
         frontLeftDrive = hardwareMap.get(DcMotor.class,"front_left_drive");
         frontRightDrive = hardwareMap.get(DcMotor.class,"front_right_drive");
+        /*
         armMotor = hardwareMap.get(DcMotor.class,"arm_motor");
         leftServo = hardwareMap.get(Servo.class,"left_servo");
         rightServo = hardwareMap.get(Servo.class,"right_servo");
+
+         */
     }
     @Override
     public void start(){
@@ -60,6 +63,7 @@ public class mecanumDriveTeleOp extends OpMode {
         telemetry.addData("b left pwr", "back left pwr: " + String.format("%.2f", BackLeft));
 
         //arm code
+        /*
         if(gamepad2.y){
             armMotor.setPower(1 * 0.2);
         }
@@ -78,6 +82,8 @@ public class mecanumDriveTeleOp extends OpMode {
         telemetry.addData("arm motor","arm motor power" + String.format("%.2f",armMotor.getPower()));
         telemetry.addData("r servo psn","right servo position" + String.format("%.2f",rightServo.getPosition()));
         telemetry.addData("l servo psn","left servo position" + String.format("%.2f",leftServo.getPosition()));
+
+         */
     }
     @Override
     public void stop(){

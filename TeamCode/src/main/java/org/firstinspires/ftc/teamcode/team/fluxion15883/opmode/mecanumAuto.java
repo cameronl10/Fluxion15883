@@ -14,20 +14,26 @@ public class mecanumAuto extends LinearOpMode
     private DcMotor backRightDrive = null;
     private DcMotor frontLeftDrive = null;
     private DcMotor frontRightDrive = null;
+    /*
     private DcMotor armMotor = null;
     private Servo leftServo = null;
     private Servo rightServo = null;
+    */
     static final double speed = 0.6;
+
+
     public void runOpMode(){
 
         backLeftDrive = hardwareMap.get(DcMotor.class,"back_left_drive");
         backRightDrive = hardwareMap.get(DcMotor.class,"back_right_drive");
         frontLeftDrive = hardwareMap.get(DcMotor.class,"front_left_drive");
         frontRightDrive = hardwareMap.get(DcMotor.class,"front_right_drive");
-
+        /*
         armMotor = hardwareMap.get(DcMotor.class,"arm_motor");
         leftServo = hardwareMap.get(Servo.class,"left_servo");
         rightServo = hardwareMap.get(Servo.class,"right_servo");
+
+         */
 
         waitForStart();
 
